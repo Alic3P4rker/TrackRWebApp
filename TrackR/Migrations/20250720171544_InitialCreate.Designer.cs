@@ -12,7 +12,7 @@ using TrackR.Context;
 namespace TrackR.Migrations
 {
     [DbContext(typeof(TrackRDbContext))]
-    [Migration("20250720151148_InitialCreate")]
+    [Migration("20250720171544_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -108,6 +108,12 @@ namespace TrackR.Migrations
                     b.Property<string>("PasswordHash")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("RefreshTokenExpiryTime")
+                        .HasColumnType("datetime(6)");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime(6)");

@@ -93,7 +93,6 @@
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/scopedcss/bundle/TrackR.styles.css
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/scopedcss/projectbundle/TrackR.bundle.scp.css
-/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/compressed/jyhya44lgb-b9sayid5wm.gz
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/compressed/fz4f435mz1-61n19gt1b8.gz
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/compressed/kr8iw47ag6-xtxxf3hu2r.gz
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/compressed/ndbliyre8n-bqjiyaj88i.gz
@@ -174,3 +173,12 @@
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/ref/TrackR.dll
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/bin/Debug/net9.0/MySqlConnector.dll
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/bin/Debug/net9.0/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/bin/Debug/net9.0/MediatR.dll
+/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/bin/Debug/net9.0/MediatR.Contracts.dll
+/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/bin/Debug/net9.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/TrackR.sourcelink.json
+/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/compressed/jyhya44lgb-s8h2l3tety.gz

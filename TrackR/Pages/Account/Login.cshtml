@@ -1,0 +1,37 @@
+@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="login-card p-4">
+        <h5 class="text-danger fw-bold mb-4">Eventure</h5>
+        <h2 class="fw-bold mb-1">Welcome !</h2>
+        <h2 class="fw-bold mb-4">Login into your account</h2>
+
+        <form method="post">
+            <div class="mb-3">
+                <label asp-for="model.email" class="form-label">Email</label>
+                <input class="form-control" asp-for="model.email" placeholder="Enter your email"/>
+                <span asp-validation-for="model.email" ></span>
+            </div>
+
+            <div class="mb-4">
+                <label asp-for="model.password" class="form-label">Password</label>
+                <input type="password" class="form-control" asp-for="model.password" placeholder="Enter your password"/>
+                <span asp-validation-for="model.password" ></span>
+            </div>
+
+            <div class="mt-4">
+                <a href="/Register/Index" class="link-secondary link-underline link-underline-opacity-0 ">Don't have an account?</a>
+            </div>
+ 
+            <button type="submit" class="btn btn-danger w-100">Continue</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

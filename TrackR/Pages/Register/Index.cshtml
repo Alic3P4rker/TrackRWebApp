@@ -1,0 +1,38 @@
+@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="login-card p-4">
+        <h5 class="text-danger fw-bold mb-4">Eventure</h5>
+        <h2 class="fw-bold mb-4">Create new account</h2>
+
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label" asp-for="model.name">Display Name</label>
+                <input type="text" class="form-control" asp-for="model.name" placeholder="Enter at least 8 characters"/>
+                <span asp-validation-for="model.name"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" asp-for="model.email">Email Address</label>
+                <input type="text" class="form-control" asp-for="model.email" placeholder="Enter your email"/>
+                <span asp-validation-for="model.email"></span>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label" asp-for="model.password">Password</label>
+                <input type="password" class="form-control" asp-for="model.password" placeholder="Enter your password"/>
+                <span asp-validation-for="model.password"></span>
+            </div>
+ 
+            <button type="=submit" class="btn btn-danger w-100">Continue</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

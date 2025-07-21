@@ -1,3 +1,4 @@
+using Joyful.API.Services;
 using TrackR.Abstractions.Repositories;
 using TrackR.Repositories;
 
@@ -11,6 +12,8 @@ public static class BuildInfranstructure
     {
         services.AddScoped<IApplicationRepository, ApplicationRepository>();
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IPasswordService, PasswordService>();
+        services.AddScoped<IAuthenticationService, AuthenticationService>();
 
         return services;
     }
