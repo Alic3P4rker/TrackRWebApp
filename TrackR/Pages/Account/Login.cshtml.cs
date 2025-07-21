@@ -25,6 +25,11 @@ public class LoginModel : PageModel
 
     public async Task<IActionResult> OnPost()
     {
+        if (!ModelState.IsValid)
+        {
+            return Page();
+        }
+
         LoginCommand loginCommand = new LoginCommand(model.email, model.password);
         Token token = await _mediator.Send(loginCommand);
 

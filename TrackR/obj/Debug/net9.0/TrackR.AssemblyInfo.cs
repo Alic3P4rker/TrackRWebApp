@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrackR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3c15a68f239c5843a95aa3ff9a2277f71ef0d1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65abe1aeec7d9c546c676a43034a06049ed43ef4")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrackR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrackR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

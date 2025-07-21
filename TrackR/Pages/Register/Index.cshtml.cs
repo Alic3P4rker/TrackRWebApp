@@ -22,6 +22,11 @@ public class RegisterModel : PageModel
 
     public async Task<IActionResult> OnPost()
     {
+        if (!ModelState.IsValid)
+        {
+            return Page();
+        }
+
         CreateUserCommand command = new CreateUserCommand(model.name, model.email, model.password);
         await _mediator.Send(command);
 

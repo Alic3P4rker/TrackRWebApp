@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -39,7 +40,9 @@ public class IndexModel : PageModel
 
     public async Task OnPost()
     {
-        Guid userId = new Guid("08ddc83a-4e9a-482b-808d-1697f8e3f2b7");
+        var userIdClaim = User.FindFirst("sub");
+        Guid.TryParse(userIdClaim.Value, out Guid userId);
+
         CreateApplicationCommand command = new CreateApplicationCommand
         (
             userId,
@@ -59,14 +62,21 @@ public class IndexModel : PageModel
 
     public async Task OnGet()
     {
+        var userIdClaim = User.FindFirst("sub");
+        Guid.TryParse(userIdClaim.Value, out Guid userId);
+
         StatusOptions = new SelectList(Enum.GetValues(typeof(ApplicationStatus)));
-        Guid userId = new Guid("08ddc83a-4e9a-482b-808d-1697f8e3f2b7");
         RetrieveApplicationsQuery query = new RetrieveApplicationsQuery(userId);
         Applications = await _mediator.Send(query);
     }
 
     public async Task<IActionResult> OnPostEdit()
     {
+        if (!ModelState.IsValid)
+        {
+            return Page();
+        }
+
         EditApplicationCommand command = new EditApplicationCommand(
             editModel.id,
             editModel.name,

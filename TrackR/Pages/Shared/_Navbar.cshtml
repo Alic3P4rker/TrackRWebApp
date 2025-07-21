@@ -10,8 +10,11 @@
     </button>
 
     <!-- User information -->
-    <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+    <div class="d-lg-flex col-lg-3 justify-content-lg-end align-items-center ms-auto gap-3">
         <h6 class="m-0"><a class="nav-link text-dark" href="#">Welcome, @User.FindFirst("name")?.Value!</a></h6>
+        <form method="post" asp-page="/Account/Logout" asp-page-handler="Logout">
+            <button type="=submit" class="btn btn-primary w-100">Logout</button>
+        </form>
     </div>
   </div>
 </nav>
