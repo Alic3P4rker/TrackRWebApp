@@ -6,7 +6,7 @@ using TrackR.Models;
 
 namespace TrackR.Commands;
 
-public class CreateApplicationCommandHandler : IRequestHandler<CreateApplicationCommand, Application>
+public class CreateApplicationCommandHandler : IRequestHandler<CreateApplicationCommand>
 {
     private readonly IApplicationRepository _repository;
     private readonly IMapper _mapper;
@@ -17,13 +17,11 @@ public class CreateApplicationCommandHandler : IRequestHandler<CreateApplication
         _mapper = mapper;
     }
 
-    async Task<Application> IRequestHandler<CreateApplicationCommand, Application>.Handle(CreateApplicationCommand request, CancellationToken cancellationToken)
+    async Task IRequestHandler<CreateApplicationCommand>.Handle(CreateApplicationCommand request, CancellationToken cancellationToken)
     {
         ApplicationEntity applicationEntity = _mapper.Map<ApplicationEntity>(request);
+        applicationEntity.UserId = request.userId;
         await _repository.CreateApplicationAsync(applicationEntity, cancellationToken);
         await _repository.SaveChangesAsync(cancellationToken);
-
-        Application application = _mapper.Map<Application>(applicationEntity);
-        return application;
     }
 }

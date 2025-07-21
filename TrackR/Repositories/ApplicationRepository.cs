@@ -40,6 +40,16 @@ internal sealed class ApplicationRepository : IApplicationRepository
             .FirstOrDefaultAsync(a => a.Name.Equals(name), cancellationToken);
     }
 
+    public async Task<IEnumerable<ApplicationEntity>> RetrieveApplicationsByUserIdAsync(Guid userId, CancellationToken cancellationToken)
+    {
+        IEnumerable<ApplicationEntity> applications = await _context.Applications
+            .AsNoTracking()
+            .Where(a => a.UserId.Equals(userId))
+            .ToArrayAsync(cancellationToken);
+
+        return applications;
+    }
+
     public Task SaveChangesAsync(CancellationToken cancellationToken)
     {
         return _context.SaveChangesAsync(cancellationToken);

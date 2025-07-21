@@ -94,7 +94,6 @@
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/scopedcss/bundle/TrackR.styles.css
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/scopedcss/projectbundle/TrackR.bundle.scp.css
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/compressed/fz4f435mz1-61n19gt1b8.gz
-/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/compressed/kr8iw47ag6-xtxxf3hu2r.gz
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/compressed/ndbliyre8n-bqjiyaj88i.gz
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/compressed/j7ukj11abn-c2jlpeoesf.gz
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/compressed/0fr53kr3wg-erw9l3u2r3.gz
@@ -181,4 +180,5 @@
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
 /Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/TrackR.sourcelink.json
-/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/compressed/jyhya44lgb-s8h2l3tety.gz
+/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/compressed/kr8iw47ag6-tgyq8wivzh.gz
+/Users/ibrahimgimba/Desktop/VsCode/TrackR/TrackR/obj/Debug/net9.0/compressed/jyhya44lgb-kvuosmvi5d.gz

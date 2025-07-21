@@ -11,5 +11,8 @@ public class MapperProfile : Profile
     {
         CreateMap<CreateUserCommand, UserEntity>();
         CreateMap<UserEntity, UserDetailsDto>();
+
+        CreateMap<CreateApplicationCommand, ApplicationEntity>();
+        CreateMap<ApplicationEntity, Application>().ReverseMap();
     }
 }

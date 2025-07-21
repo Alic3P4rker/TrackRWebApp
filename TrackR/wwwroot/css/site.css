@@ -247,4 +247,20 @@ form .search-icon-left {
   margin-right: 0.25rem;
 }
 
+.dataTables_filter {
+  float: right; /* or left, or center */
+  margin-bottom: 1rem;
+}
+
+.dataTables_filter input {
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.dt-search {
+  display: none !important;
+}
+
 

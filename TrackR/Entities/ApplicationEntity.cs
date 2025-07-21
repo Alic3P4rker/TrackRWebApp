@@ -10,9 +10,9 @@ public class ApplicationEntity
     public string Name { get; set; }
     public string? Description { get; set; }
     public string? Location { get; set; }
-    public DateTime ApplicationDate { get; set; }
+    public DateOnly ApplicationDate { get; set; }
     public ApplicationStatus Status { get; set; }
-    public string? Postion { get; set; }
+    public string? Position { get; set; }
 
     // Contact information
     public string? ContactName { get; set; }

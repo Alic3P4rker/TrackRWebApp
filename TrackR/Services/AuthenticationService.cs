@@ -38,6 +38,7 @@ internal sealed class AuthenticationService : IAuthenticationService
 
         var claimsForToken = new List<Claim>();
         claimsForToken.Add(new Claim("sub", userEntity.Id.ToString()));
+        claimsForToken.Add(new Claim("name", userEntity.Name));
         claimsForToken.Add(new Claim("emailAddress", userEntity.Email));
 
         var jwtSecurityToken = new JwtSecurityToken(

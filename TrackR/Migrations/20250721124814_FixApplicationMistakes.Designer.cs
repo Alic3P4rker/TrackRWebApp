@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TrackR.Context;
 
@@ -11,9 +12,11 @@ using TrackR.Context;
 namespace TrackR.Migrations
 {
     [DbContext(typeof(TrackRDbContext))]
-    partial class TrackRDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250721124814_FixApplicationMistakes")]
+    partial class FixApplicationMistakes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -28,8 +31,8 @@ namespace TrackR.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
-                    b.Property<DateOnly>("ApplicationDate")
-                        .HasColumnType("date");
+                    b.Property<DateTime>("ApplicationDate")
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("ContactAddress")
                         .HasColumnType("longtext");

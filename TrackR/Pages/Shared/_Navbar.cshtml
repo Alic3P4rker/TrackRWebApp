@@ -1,0 +1,17 @@
+<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary py-3 px-2 border-bottom border-light">
+  <div class="container-fluid">
+
+    <!-- Brand -->
+    <h3><a class="navbar-brand site-color" href="#">TrackR</a></h3>
+
+    <!-- Toggler for mobile view -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- User information -->
+    <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+        <h6 class="m-0"><a class="nav-link text-dark" href="#">Welcome, @User.FindFirst("name")?.Value!</a></h6>
+    </div>
+  </div>
+</nav>
